@@ -60,7 +60,7 @@ const DiscoverCora: React.FC = () => {
         <img
           alt="Mulher elegante vestindo Cora"
           className="absolute inset-0 w-full h-full object-cover object-center grayscale-[0.2] transition-transform duration-[6000ms] hover:scale-105"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB28twYKeOoy3qQ7_C8zN6aKP-vmydokBr2EEp1x2ChMSzVxse4aP44mfr4mdAe840_VT_0oB73BGVvy88rzli60vlRXT1tgJsHHKdPirjgrFyhliNUnN66-FoDNLjOWGzeyQI8vft9nu29PCqyEgfHV0MH8nHMnPGqRYsbV6mViT5yVHllN1oad_kuwMx4eozuvzVW0xLs1ppABarrxQ6arFzOI8LCBmyDgtEaXzMzAJuHbr4g0GTijba6k4cek6hFDhIvQ4ye2kle"
+          src="https://cdn.shopify.com/s/files/1/0654/6138/7478/files/Mobile-Background3.webp"
         />
         <div className="absolute inset-0 bg-black/5"></div>
         {/* Subtle Frame */}

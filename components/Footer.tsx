@@ -10,9 +10,10 @@ const Footer: React.FC = () => {
           <img
             alt="Grupo de mulheres profissionais sorridentes vestindo uniformes Cora"
             className="absolute inset-0 w-full h-full object-cover object-center grayscale-[0.2] transition-transform duration-[4000ms] hover:scale-105"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9Mi2g9s5UxGO1LtxUykppCXMuw0i3CND7S3PpxofDPah0osecF6MIcpGVOglGkWC-tSG6QOd8Wfk-k1szOKJrfLXmW8FyfpmbIqGkYs0tw0niurFn7h24jd0JN32dpcTw0xe977uB1NDU6uTRlPXi4l-FxAKVMzjrjcOpFHQjoTe7Q4MdgzTAp-KrVooA8T7mT68Kbup4wQofM0g7wxk9dEOPJgQLbdS3pVw9y-nGFq5vbbJVP26RYqbT-yJyNspzwFco2owZyPir"
+            src="https://cdn.shopify.com/s/files/1/0654/6138/7478/files/footer-img.webp"
           />
           <div className="absolute inset-0 bg-black/5"></div>
+          <div className="absolute inset-10 border border-white/20 pointer-events-none hidden lg:block"></div>
         </div>
 
         <div className="w-full lg:w-1/2 p-10 lg:p-24 flex flex-col justify-center text-[#171212] order-1 lg:order-2">
@@ -45,22 +46,22 @@ const Footer: React.FC = () => {
           {/* Contact Info */}
           <div className="text-[#171212] flex flex-col gap-8 text-[16px] font-medium w-full md:w-auto">
             <div className="flex items-center gap-6 group">
-              <span className="material-symbols-outlined text-2xl text-[#8b434f]">location_on</span>
+              <i className="ph-light ph-map-pin text-2xl text-[#8b434f]"></i>
               <span className="tracking-widest uppercase font-sans font-bold text-[14px] group-hover:text-[#8b434f] transition-colors">Base em São Paulo</span>
             </div>
             <div className="flex items-center gap-6 group">
-              <span className="material-symbols-outlined text-2xl text-[#8b434f]">storefront</span>
+              <i className="ph-light ph-storefront text-2xl text-[#8b434f]"></i>
               <span className="tracking-widest uppercase font-sans font-bold text-[14px] group-hover:text-[#8b434f] transition-colors">Loja Própria</span>
             </div>
             <div className="flex items-start gap-6 group">
-              <span className="material-symbols-outlined text-2xl text-[#8b434f] mt-1">chat_bubble</span>
+              <i className="ph-light ph-chat-circle text-2xl text-[#8b434f] mt-1"></i>
               <div className="flex flex-col">
                 <span className="opacity-50 uppercase text-[14px] font-bold tracking-widest mb-1">Agende sua visita via WhatsApp</span>
                 <span className="font-display italic text-xl lg:text-2xl text-[#171212] group-hover:text-[#8b434f] transition-colors">+55 11 94249-8914</span>
               </div>
             </div>
             <div className="flex items-center gap-6 group">
-              <span className="material-symbols-outlined text-2xl text-[#8b434f]">language</span>
+              <i className="ph-light ph-globe text-2xl text-[#8b434f]"></i>
               <span className="tracking-widest uppercase font-sans font-bold text-[14px]">
                 Site: <a className="hover:text-[#8b434f] transition-colors" href="https://www.useunica.shop" target="_blank" rel="noreferrer">www.useunica.shop</a>
               </span>
