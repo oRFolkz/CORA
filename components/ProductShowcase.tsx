@@ -84,8 +84,11 @@ const ProductShowcase: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16 text-white font-sans antialiased">
         <div className="pb-16 lg:pb-24 text-center">
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-tight max-w-4xl mx-auto uppercase font-light">
-            Sofisticação que acompanha seu <span className="italic font-normal">ritmo.</span>
+            Elegância que acompanha seu <span className="italic font-normal">ritmo.</span>
           </h2>
+          <div className="mt-12">
+            <span className="font-display text-3xl md:text-5xl lg:text-5xl text-white/50 tracking-widest uppercase mb-3 font-light block">Veste Wrap <span className="italic text-white">Alina</span></span>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">

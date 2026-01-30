@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
             <div className="flex items-start gap-6 group">
               <i className="ph-light ph-chat-circle text-2xl text-[#8b434f] mt-1"></i>
               <div className="flex flex-col">
-                <span className="opacity-50 uppercase text-[14px] font-bold tracking-widest mb-1">Agende sua visita via WhatsApp</span>
+                <span className="uppercase text-[14px] font-bold tracking-widest mb-1">Agende sua visita via WhatsApp</span>
                 <span className="font-display italic text-xl lg:text-2xl text-[#171212] group-hover:text-[#8b434f] transition-colors">+55 11 94249-8914</span>
               </div>
             </div>
