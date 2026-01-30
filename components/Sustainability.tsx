@@ -10,7 +10,7 @@ const Sustainability: React.FC = () => {
       <div className="w-full lg:absolute lg:inset-0 lg:z-20 lg:flex lg:items-center lg:justify-end lg:px-20 py-16 lg:py-0">
         <div className="max-w-xl mx-auto lg:mx-0 w-[90%] md:w-full bg-white lg:bg-white/95 lg:backdrop-blur-md p-8 lg:p-14 lg:shadow-[0_20px_50px_rgba(0,0,0,0.05)] border-l-0 lg:border-l-[1px] lg:border-[#8b434f]">
           <span className="text-[14px] font-bold uppercase tracking-[0.5em] text-[#8b434f] block mb-4">Inovação Responsável</span>
-          <h2 className="text-[#171212] text-4xl md:text-5xl lg:text-6xl font-display font-light tracking-tight uppercase mb-8 leading-tight">
+          <h2 className="text-[#171212] text-2xl md:text-3xl lg:text-4xl font-display font-light tracking-tight uppercase mb-8 leading-tight">
             Tecnologia & <br className="hidden lg:block" /> <span className="italic">Sustentabilidade</span>
           </h2>
 

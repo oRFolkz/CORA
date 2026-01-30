@@ -18,7 +18,7 @@ const EditorialTestimonials: React.FC = () => {
 
         {/* Main Section Title - Playfair Display */}
         <div className="text-center mb-24 lg:mb-32">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-[#8b434f] tracking-[0.15em] uppercase">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-[#8b434f] uppercase">
             O que estão dizendo sobre a Cora
           </h2>
         </div>
@@ -28,7 +28,7 @@ const EditorialTestimonials: React.FC = () => {
 
           {/* Column 1 & 2: Natália Deodato (50% Width) */}
           <div className="lg:col-span-2 flex flex-col group">
-            <div className="relative w-full aspect-video md:aspect-[4/3] lg:aspect-[1.3/1] overflow-hidden bg-stone-300 shadow-[0_20px_50px_rgba(0,0,0,0.1)] mb-10">
+            <div className="relative w-full aspect-video md:aspect-[4/3] lg:aspect-[1.3/1] overflow-hidden bg-stone-300 shadow-[0_20px_50px_rgba(0,0,0,0.1)] mb-10 sticky top-24 z-30">
               <video
                 ref={videoRef}
                 autoPlay
@@ -49,18 +49,6 @@ const EditorialTestimonials: React.FC = () => {
                   {isMuted ? 'volume_off' : 'volume_up'}
                 </span>
               </button>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-sans font-bold text-[18px] lg:text-[22px] tracking-widest text-[#8b434f] uppercase">
-                Natália Deodato
-              </h4>
-              <p className="text-[14px] uppercase tracking-[0.3em] text-gray-500 font-bold">
-                Ex-BBB e Profissional da Beleza
-              </p>
-              <blockquote className="font-sans text-2xl lg:text-[34px] leading-tight text-[#171212] italic pt-6 font-light opacity-90">
-                "Quando vesti Cora pela primeira vez, me senti mais profissional. Minhas clientes elogiam até hoje."
-              </blockquote>
             </div>
           </div>
 
@@ -97,13 +85,13 @@ const EditorialTestimonials: React.FC = () => {
             </div>
             <div className="space-y-3">
               <h4 className="font-sans font-bold text-[16px] tracking-widest text-[#8b434f] uppercase">
-                Dra. Camila
+                Natália Deodato
               </h4>
               <p className="text-[14px] uppercase tracking-[0.2em] text-gray-500 font-bold">
-                Dentista
+                Ex-BBB e Profissional da Beleza
               </p>
               <blockquote className="font-sans text-[16px] lg:text-[18px] leading-relaxed text-[#171212] italic pt-3 font-light">
-                "A elegância do corte aliada ao conforto do tecido. Nunca usei nada igual."
+                "Quando vesti Cora pela primeira vez, me senti mais profissional. Minhas clientes elogiam até hoje."
               </blockquote>
             </div>
           </div>

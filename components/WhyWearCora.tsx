@@ -41,7 +41,7 @@ const WhyWearCora: React.FC = () => {
               "Praticidade absoluta: tecidos que acompanham seu ritmo."
             ].map((text, idx) => (
               <li key={idx} className="flex items-center gap-8 group">
-                <span className="text-[14px] font-bold text-[#8b434f] opacity-40 group-hover:opacity-100 transition-opacity">0{idx + 1}</span>
+                <span className="w-8 h-px bg-[#8b434f] opacity-40 group-hover:opacity-100 transition-all group-hover:w-12"></span>
                 <span className="font-sans text-[16px] md:text-[17px] text-gray-700 font-light leading-relaxed group-hover:text-[#171212] transition-colors">
                   {text}
                 </span>

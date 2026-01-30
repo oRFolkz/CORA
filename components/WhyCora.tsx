@@ -77,8 +77,7 @@ const WhyCora: React.FC = () => {
           src="https://cdn.shopify.com/s/files/1/0654/6138/7478/files/Mobile-Background2.webp"
         />
         <div className="absolute inset-0 bg-[#b8aaa1]/10 mix-blend-multiply"></div>
-        {/* Subtle geometric overlay */}
-        <div className="absolute top-12 right-12 w-24 h-24 border border-white/20 hidden lg:block"></div>
+        <div className="absolute inset-12 border border-white/20 pointer-events-none hidden lg:block"></div>
       </div>
     </section>
   );
