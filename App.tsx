@@ -5,6 +5,10 @@ import Hero from './components/Hero';
 import Sustainability from './components/Sustainability';
 import ProductShowcase from './components/ProductShowcase';
 import ProductVenus from './components/ProductVenus';
+import ProductMinerva from './components/ProductMinerva';
+import ProductSabrina from './components/ProductSabrina';
+import ProductFlavia from './components/ProductFlavia';
+import ProductCassia from './components/ProductCassia';
 import LuxuryLines from './components/LuxuryLines';
 import WhyCora from './components/WhyCora';
 import WhyWearCora from './components/WhyWearCora';
@@ -19,11 +23,23 @@ const App: React.FC = () => {
       <Hero />
       <Sustainability />
 
-      {/* Product Showcase */}
+      {/* Product Showcase - Wrap Alina */}
       <ProductShowcase />
 
       {/* Product Venus */}
       <ProductVenus />
+
+      {/* Product Minerva */}
+      <ProductMinerva />
+
+      {/* Product Sabrina */}
+      <ProductSabrina />
+
+      {/* Product Flavia */}
+      <ProductFlavia />
+
+      {/* Product Cassia */}
+      <ProductCassia />
 
       {/* Luxury Lines */}
       <LuxuryLines />

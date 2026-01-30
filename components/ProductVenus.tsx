@@ -17,13 +17,6 @@ const ProductVenus: React.FC = () => {
     return (
         <ProductSection
             id="venus"
-            mainTitle={
-                <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-tight max-w-4xl mx-auto uppercase font-light">
-                    A essência da <span className="italic font-normal">feminilidade.</span>
-                </h2>
-            }
-            subtitlePrefix="Veste"
-            subtitleHighlight="Vênus"
             products={[
                 {
                     tag: "Manga Curta",
@@ -35,10 +28,10 @@ const ProductVenus: React.FC = () => {
                     ],
                     header: (
                         <h3 className="font-display text-2xl lg:text-3xl uppercase tracking-widest mb-3 font-light">
-                            Charme & <span className="italic">Cobertura</span>
+                            VESTE <span className="italic">Vênus</span>
                         </h3>
                     ),
-                    description: "Design pensado para valorizar a feminilidade e as formas do corpo, com dois bolsos frontais e modelagem alongada."
+                    description: "Design pensado para valorizar a feminilidade e as formas do corpo, com dois bolsos frontais e modelagem alongada, que agrega charme e oferece cobertura perfeita."
                 },
                 {
                     tag: "Manga Longa",

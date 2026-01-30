@@ -35,10 +35,10 @@ const ProductShowcase: React.FC = () => {
           ],
           header: (
             <h3 className="font-display text-2xl lg:text-3xl uppercase tracking-widest mb-3 font-light">
-              Frescor & <span className="italic">Dinamismo</span>
+              Veste Wrap <span className="italic">Alina</span>
             </h3>
           ),
-          description: "Design transpassado que proporciona frescor e liberdade de movimentos para a profissional dinâmica."
+          description: "Design transpassado que alia funcionalidade a um toque contemporâneo, proporcionando um caimento elegante para todos os tipos de corpo."
         },
         {
           tag: "Manga Longa",
@@ -50,7 +50,7 @@ const ProductShowcase: React.FC = () => {
           ],
           header: (
             <h3 className="font-display text-2xl lg:text-3xl uppercase tracking-widest mb-3 font-light">
-              <span className="italic">Proteção & Sofisticação</span>
+              Proteção & <span className="italic">Sofisticação</span>
             </h3>
           ),
           description: "Sofisticação estrutural com proteção térmica, ideal para ambientes climatizados com elegância impecável."
