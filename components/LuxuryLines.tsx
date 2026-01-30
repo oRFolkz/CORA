@@ -6,22 +6,54 @@ const LuxuryLines: React.FC = () => {
     {
       img: "https://cdn.shopify.com/s/files/1/0654/6138/7478/files/WrapMCBranco.webp",
       title: "Transparência Zero",
-      desc: "Tecnologia de trama densa que garante segurança total, mesmo nos tons mais claros."
-    },
-    {
-      img: "https://cdn.shopify.com/s/files/1/0654/6138/7478/files/WrapMLAzul.webp",
-      title: "Efeito Beauty",
-      desc: "Micropartículas que auxiliam na circulação e reduzem sinais de fadiga durante o uso."
+      desc: "Zero transparência até mesmo em cores claras, garantindo total segurança."
     },
     {
       img: "https://cdn.shopify.com/s/files/1/0654/6138/7478/files/VenusMLBranco.webp",
+      title: "Redução de Medidas",
+      desc: "Reduz sinais da celulite com uso contínuo graças à tecnologia Emana."
+    },
+    {
+      img: "https://cdn.shopify.com/s/files/1/0654/6138/7478/files/WrapMCBranco.webp",
       title: "Easy Care",
-      desc: "Lave e use. Um tecido que não amassa e mantém o aspecto de novo por anos."
+      desc: "Economize tempo: não é preciso passar, sempre impecável."
+    },
+    {
+      img: "https://cdn.shopify.com/s/files/1/0654/6138/7478/files/WrapMLAzul.webp",
+      title: "Proteção Solar",
+      desc: "Proteção solar eficiente fator UV 50+ para sua pele."
+    },
+    {
+      img: "https://cdn.shopify.com/s/files/1/0654/6138/7478/files/WrapMLAzul.webp",
+      title: "Alta Performance",
+      desc: "Ativa a circulação e combate a fadiga muscular durante o dia."
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [itemsToShow, setItemsToShow] = React.useState(3);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setItemsToShow(window.innerWidth < 1024 ? 1 : 3);
+    };
+    handleResize(); // Init
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => {
+        const maxIndex = techFeatures.length - itemsToShow;
+        return prev >= maxIndex ? 0 : prev + 1;
+      });
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [itemsToShow, techFeatures.length]);
+
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section id="linhas" className="bg-white py-16 lg:py-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
 
         {/* Header Section - More compact */}
@@ -38,29 +70,51 @@ const LuxuryLines: React.FC = () => {
           </div>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-          {techFeatures.map((item, idx) => (
-            <div key={idx} className="group">
-              <div className="relative aspect-[3/4] overflow-hidden mb-6 bg-gray-50 shadow-sm transition-shadow hover:shadow-xl">
-                <img
-                  alt={item.title}
-                  className="w-full h-full object-cover grayscale-[0.2] transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105"
-                  src={item.img}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent pointer-events-none"></div>
-              </div>
+        {/* Carousel Track */}
+        <div className="relative w-full overflow-hidden">
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}
+          >
+            {techFeatures.map((item, idx) => (
+              <div
+                key={idx}
+                className="flex-shrink-0 px-4"
+                style={{ width: `${100 / itemsToShow}%` }}
+              >
+                <div className="group h-full">
+                  <div className="relative aspect-[3/4] overflow-hidden mb-6 bg-gray-50 shadow-sm transition-shadow hover:shadow-xl">
+                    <img
+                      alt={item.title}
+                      className="w-full h-full object-cover grayscale-[0.2] transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105"
+                      src={item.img}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent pointer-events-none"></div>
+                  </div>
 
-              <div className="relative pl-5">
-                <span className="absolute left-0 top-0 bottom-0 w-[2px] bg-gray-100 group-hover:bg-[#8b434f] transition-all duration-500"></span>
-                <h3 className="text-[16px] font-bold uppercase tracking-widest text-[#171212] mb-2 group-hover:text-[#8b434f] transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-[16px] font-sans font-light leading-relaxed text-gray-500">
-                  {item.desc}
-                </p>
+                  <div className="relative pl-5 border-l-2 border-gray-100 group-hover:border-[#8b434f] transition-colors duration-500">
+                    <h3 className="text-[16px] font-bold uppercase tracking-widest text-[#171212] mb-2 group-hover:text-[#8b434f] transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-[16px] font-sans font-light leading-relaxed text-gray-500">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Carousel Indicators */}
+        <div className="flex justify-center mt-12 gap-2">
+          {Array.from({ length: techFeatures.length - itemsToShow + 1 }).map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentIndex ? 'w-8 bg-[#8b434f]' : 'w-2 bg-gray-300'}`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
           ))}
         </div>
       </div>

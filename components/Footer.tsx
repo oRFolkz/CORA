@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full">
+    <footer id="atendimento" className="w-full">
       {/* Editorial Mission Section - Sharp Luxury Redesign */}
       <div className="flex flex-col lg:flex-row w-full bg-[#e3e1d2]">
         <div className="w-full lg:w-1/2 relative h-[500px] lg:h-[700px] overflow-hidden order-2 lg:order-1">
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-6 group">
               <i className="ph-light ph-globe text-2xl text-[#8b434f]"></i>
               <span className="tracking-widest uppercase font-sans font-bold text-[14px]">
-                Site: <a className="hover:text-[#8b434f] transition-colors" href="https://www.useunica.shop" target="_blank" rel="noreferrer">www.useunica.shop</a>
+                Site: <a className="hover:text-[#8b434f] transition-colors" href="https://usecora.co/" target="_blank" rel="noreferrer">www.usecora.co</a>
               </span>
             </div>
           </div>
@@ -80,9 +80,9 @@ const Footer: React.FC = () => {
 
             <div className="flex items-center gap-10">
               {[
-                { icon: 'ph-light ph-whatsapp-logo', link: 'https://wa.me/5511942498914' },
-                { icon: 'ph-light ph-globe', link: '#' },
-                { icon: 'ph-light ph-instagram-logo', link: '#' }
+                { icon: 'ph-light ph-whatsapp-logo', link: 'https://api.whatsapp.com/send/?phone=5511942498914&text=Oi%2C+vim+da+loja+online+da+Unica.+Quero+saber+mais+sobre+roupas+para+o+setor+de+beleza%21&type=phone_number&app_absent=0' },
+                { icon: 'ph-light ph-globe', link: 'https://usecora.co/' },
+                { icon: 'ph-light ph-instagram-logo', link: 'https://www.instagram.com/useunicaoficial' }
               ].map((social, idx) => (
                 <a
                   key={idx}

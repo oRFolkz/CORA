@@ -45,7 +45,7 @@ const DiscoverCora: React.FC = () => {
           {/* CTA Button - Sharp & High Contrast */}
           <a
             className="inline-flex items-center gap-6 bg-[#8b434f] text-white px-10 py-6 rounded-none shadow-xl hover:bg-[#703640] transition-all duration-500 group w-full sm:w-auto justify-center"
-            href="https://wa.me/seunumerodeatendimento"
+            href="https://api.whatsapp.com/send/?phone=5511942498914&text=Oi%2C+vim+da+loja+online+da+Unica.+Quero+saber+mais+sobre+roupas+para+o+setor+de+beleza%21&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
           >

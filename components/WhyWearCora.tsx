@@ -3,7 +3,7 @@ import React from 'react';
 
 const WhyWearCora: React.FC = () => {
   return (
-    <section className="min-h-screen w-full flex flex-col lg:flex-row bg-[#e3e1d2]">
+    <section id="diferenciais" className="min-h-screen w-full flex flex-col lg:flex-row bg-[#e3e1d2]">
       {/* Image Column */}
       <div className="w-full lg:w-1/2 h-[60vh] lg:h-auto relative overflow-hidden group">
         <img
