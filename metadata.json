@@ -1,0 +1,8 @@
+{
+  "name": "Cora - Professional Style",
+  "description": "A high-end landing page for Cora professional clothing, featuring interactive product displays, tech carousels, and an AI-powered styling assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
