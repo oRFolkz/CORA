@@ -131,7 +131,7 @@ const ProductShowcase: React.FC = () => {
 
             <div className="mt-10 border-l border-white/20 pl-8">
               <h3 className="font-display text-2xl lg:text-3xl uppercase tracking-widest mb-3 font-light">
-                Veste Wrap <span className="italic">Alina</span>
+                Frescor & <span className="italic">Dinamismo</span>
               </h3>
               <p className="font-sans font-light text-[16px] leading-relaxed opacity-70 max-w-sm">
                 Design transpassado que proporciona frescor e liberdade de movimentos para a profissional dinâmica.
@@ -178,7 +178,7 @@ const ProductShowcase: React.FC = () => {
 
             <div className="mt-10 border-r border-white/20 pr-8 text-right flex flex-col items-end">
               <h3 className="font-display text-2xl lg:text-3xl uppercase tracking-widest mb-3 font-light">
-                Veste Wrap <span className="italic">Alina</span>
+                Proteção & <span className="italic">Elegância</span>
               </h3>
               <p className="font-sans font-light text-[16px] leading-relaxed opacity-70 max-w-sm">
                 Sofisticação estrutural com proteção térmica, ideal para ambientes climatizados com elegância impecável.
